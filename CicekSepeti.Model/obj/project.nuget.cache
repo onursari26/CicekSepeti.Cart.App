@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "73EGliUjN846pEYqLzwX0EKmERWrpWRfSFOsfq40/HTJxbcCqMFxVeDbLr4V3Ic07blZe1YQGeAPZegYfnIQdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\onur.sari\\Desktop\\CicekSepeti\\CicekSepeti.Model\\CicekSepeti.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\onur.sari\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,33 @@
+Uygulamada kullanılan teknolojiler:
+
+.Net Core 5.0 ile geliştirildi.
+
+ 1- Inmemory database (product, user, discount)
+ 2- Redis cloud (sepet)
+ 3- Serilog (console, file)
+ 4- Fluent validation
+ 5- Identity User(login, token)
+ 6- Swagger
+ 7- AutoMapper
+ 8- Hangfire
+
+
+Bazı metotlar AllowAnonymous olarak tanımlanmıştır (ürünleri alma ve yeni user oluşturma)
+diğerlerine login olup token ile authorize olduktan sonra devam edilebilir.
+Sepet işlemleri her iki şekildede gerçekleştirilebilir.
+Kullancı authorize olmuş ise sepet redisde değilse cookie üzerinde tutuluyor ve kullanıcı sepeti dolu iken login olursa sepet redise atılıyor.
+
+Uygulama ayağa kalkarken seed data metodu ile username: test password: test şeklinde kullanıcı, ürün ve discountlar oluşuyor.
+
+Loglama işlemi serilog kütüphanesi kullanılarak 2 middleware üzerinden yapılıyor.
+birisi uygulamadaki exceptionları, diğeri de response ve requestleri loglamak için.
+
+Test için swagger implement ettim.
+
+Unitofwork ve repository pattern mevcut.
+
+Hangfire job ile süresi dolan discount kodlar passife cekliyor. default olarak dakikada 1 çalışıyor configden değiştirilebilir.
+
+
+
+
